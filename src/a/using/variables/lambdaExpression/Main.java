@@ -11,15 +11,15 @@ public class Main {
 
 	public void playGorilla(boolean baby) {
 		//baby=true;
-		// Lamda expression can access instance variable
+		// LamdaExpression can access instance variable
 		play(() -> walk);
-		// Lamda expression can access static variable
+		// LamdaExpression can access static variable
 		play(() -> vol);
-		// Lambda expression can access effectively final method parameters
+		// LamdaExpression can access effectively final method parameters
 		play(() -> baby ? "up" : "down");
 		String approach = "v1";
 		//approach="v1";
-		// Lambda expression can access effectively final local variable
+		// LamdaExpression can access effectively final local variable
 		play(() -> approach);
 	}
 
